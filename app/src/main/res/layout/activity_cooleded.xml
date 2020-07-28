@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lls"
+    android:background="@drawable/bluebackground"
+    tools:context=".Cooleded">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Phone Booster"
+        android:textColor="#eee"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@mipmap/galaxy"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:gravity="center"
+      >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                    android:id="@+id/circular_progress3"
+                    android:layout_width="268dp"
+                    android:layout_height="253dp"
+                    app:dotColor="#fff"
+                    app:textSize="0sp"
+                    app:direction="clockwise"
+                    app:progressBackgroundColor="#aeaeae"
+                    app:progressColor="#fff"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/fan"
+                    android:layout_width="207dp"
+                    android:layout_height="187dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/circular_progress3"
+                    app:layout_constraintEnd_toEndOf="@+id/circular_progress3"
+                    app:layout_constraintStart_toStartOf="@+id/circular_progress3"
+                    app:layout_constraintTop_toTopOf="@+id/circular_progress3"
+                    app:srcCompat="@mipmap/fan" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+
+            android:id="@+id/cdtv"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="16sp"
+            android:textColor="#fff"
+
+            android:text="Cooling Down..."/>
+
+
+        <TextView
+
+            android:id="@+id/kento"
+        android:gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="26sp"
+            android:textColor="#fff"
+
+            android:textStyle="bold"
+            android:text="Optimized"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

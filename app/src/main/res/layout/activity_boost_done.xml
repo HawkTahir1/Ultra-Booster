@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constid"
+    tools:context=".BoostDone"
+    android:background="@drawable/bluebackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llb"
+        android:layout_height="match_parent"
+        android:background="@mipmap/galaxy"
+        android:orientation="vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Phone Booster"
+        android:textColor="#eee"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rocket"
+        app:layout_constraintEnd_toEndOf="@+id/circles"
+        app:layout_constraintStart_toStartOf="@+id/circles"
+        app:layout_constraintTop_toTopOf="@+id/rocket"
+        app:srcCompat="@mipmap/rocket" />
+
+
+    <ImageView
+        android:id="@+id/circles"
+        android:layout_width="307dp"
+        android:layout_height="466dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        app:srcCompat="@mipmap/cccsaaa" />
+
+
+    <ImageView
+        android:id="@+id/rocket"
+        android:layout_width="328dp"
+        android:layout_height="331dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/circles"
+        app:layout_constraintEnd_toEndOf="@+id/circles"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/circles"
+        app:layout_constraintTop_toTopOf="@+id/circles"
+        app:layout_constraintVertical_bias="0.474"
+        app:srcCompat="@mipmap/clouds" />
+
+    <TextView
+        android:id="@+id/cpsaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="CPU scanning and optimization progress.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rocket" />
+
+
+    <TextView
+        android:id="@+id/precent"
+        android:layout_width="91dp"
+        android:layout_height="33dp"
+        android:gravity="center_horizontal"
+        android:text="20"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpsaaa"
+        app:layout_constraintVertical_bias="0.121" />
+
+
+    <TextView
+        android:id="@+id/fsss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Wait 40 Seconds for better performance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precent" />
+
+    <TextView
+        android:id="@+id/opticle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimized"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fsss" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="73dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="28dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power"
+        app:layout_constraintVertical_bias="0.278"
+        tools:ignore="UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

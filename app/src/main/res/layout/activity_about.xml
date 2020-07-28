@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/bluebackground"
+    android:outlineProvider="bounds"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context=".About">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_height="60dp">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Device Info"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/recc"
+        android:elevation="5dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ttvv1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView1"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/recc"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ttvv2"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:text="TextView1"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/recc"
+        android:elevation="15dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ttvv3"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:text="TextView1"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/recc"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ttvv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="TextView1"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/recc"
+        android:elevation="5dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/ttvv5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="TextView1"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
